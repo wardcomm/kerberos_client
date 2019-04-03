@@ -1,7 +1,8 @@
 ---
 galaxy_info:
+  description: This is Galaxy role to help getting a linux box in windows AD
   author: "J. Chad Ward"
-  company: AnsibleWorks
+  company: jchadward.com
   license: BSD
   min_ansible_version: 1.4 
   platforms:
