@@ -5,3 +5,6 @@ kerberos_client_redhat_pkg:
   - krb5-libs
   - krb5-workstation
   - cyrus-sasl-gssapi
+
+sssd_client_redhat_pkg:
+  - sssd

@@ -10,3 +10,27 @@
 
 - name: Copy the client configuration file
   template: src=krb5.conf.j2 dest=/etc/krb5.conf
+
+- name: Install the SSSD packages
+  yum:
+    name: "{{ item }}"
+    state: present
+  with_items:
+    - {{ sssd_client_redhat_pkg }}
+  when: ansible_os_family == "RedHat"
+
+ - name: Enable service sssd
+  service:
+    name: sssd
+    enabled: yes
+
+- name: Start service sssd, if not started
+  service:
+    name: sssd
+    state: started
+
+- name: Copy the sssd.conf client configuration file
+  template:
+    src = krb5.conf.j2
+    dest = /etc/krb5.conf
+

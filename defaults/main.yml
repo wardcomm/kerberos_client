@@ -8,3 +8,9 @@ kerberos_client_dns_lookup_kdc: false
 kerberos_client_ticket_lifetime: 24h
 kerberos_client_renew_lifetime: 7d
 kerberos_client_forwardable: true
+
+sssd_client_domain_name: jchadward.com
+sssd_client_ad_domain: jchadward.com
+sssd_client_krb5_realm: JCHADWARD.COM
+sssd_client_domain_title: [domain/jchadward.com]
+sssd_client_simple_allow_groups: jchadward@gmail.com
