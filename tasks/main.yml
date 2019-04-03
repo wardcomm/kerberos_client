@@ -1,6 +1,9 @@
 ---
+
 - name: Install the kerberos packages
-  yum: name={{ item }} state=present
+  yum:
+    name: {{ item }}
+    state: present
   with_items: {{ kerberos_client_redhat_pkg }}
   when: ansible_os_family == "RedHat"
 
