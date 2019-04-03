@@ -4,7 +4,7 @@ galaxy_info:
   author: J. Chad Ward
   company: jchadward.com
   license: BSD
-  min_ansible_version: 1.4
+  min_ansible_version: 2.7
   platforms:
    - name: EL
      versions:
@@ -15,5 +15,4 @@ galaxy_info:
     - Linux
     - RHEL
     - kerberos
-
 dependencies: []
