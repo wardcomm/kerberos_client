@@ -19,8 +19,8 @@
     - {{ sssd_client_redhat_pkg }}
   when: ansible_os_family == "RedHat"
 
- - name: Enable service sssd
-   service:
+- name: Enable service sssd
+  service:
     name: sssd
     enabled: yes
 
