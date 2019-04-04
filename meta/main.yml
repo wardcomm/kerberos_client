@@ -1,6 +1,7 @@
 ---
 galaxy_info:
   description: This is Galaxy role to help getting a linux box in windows AD
+  role_name: linux_kerberos
   author: J. Chad Ward
   company: jchadward.com
   license: BSD
