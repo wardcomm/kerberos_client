@@ -20,7 +20,7 @@
   when: ansible_os_family == "RedHat"
 
  - name: Enable service sssd
-  service:
+   service:
     name: sssd
     enabled: yes
 
@@ -33,4 +33,3 @@
   template:
     src = krb5.conf.j2
     dest = /etc/krb5.conf
-
