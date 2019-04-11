@@ -18,7 +18,7 @@ ___
     name: "{{ item }}"
     state: present
   with_items:
-    - {{ sssd_client_redhat_pkg }}
+    - sssd
   when: ansible_os_family == "RedHat"
 
 - name: Enable service sssd
