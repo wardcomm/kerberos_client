@@ -1,5 +1,4 @@
----
-
+___
 - name: Install the kerberos packages
   yum:
     name: "{{ item }}"
