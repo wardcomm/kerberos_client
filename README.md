@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 kerberos_client
 ===============
 
