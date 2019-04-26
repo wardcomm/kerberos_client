@@ -35,5 +35,5 @@
 
 - name: Copy the sssd.conf client configuration file
   template:
-    src = sssd.conf.j2
-    dest = /etc/sssd/sssd.conf
+    src: sssd.conf.j2
+    dest: /etc/sssd/sssd.conf
